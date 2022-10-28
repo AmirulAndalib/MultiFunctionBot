@@ -15,13 +15,11 @@ load_dotenv("config.env", override=True)
 
 
 class ENV_VARS(object):
-    API_ID = int(os.environ.get("API_ID", 5917863))
-    API_HASH = os.environ.get("API_HASH", "a8acfc800b5c0c6bc97b179751a06421")
+    API_ID = int(os.environ.get("API_ID"))
+    API_HASH = os.environ.get("API_HASH")
     BIFM_URL = os.environ.get("BIFM_URL", "https://bifm.tacohitbox.com/api/bypass?url")
-    BOT_TOKEN = os.environ.get(
-        "BOT_TOKEN", "5465691492:AAGpEQqQN5LJI_wZhfCQEVK0yTApgi9WV94"
-    )
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "MultiFunctionUse_Bot")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME")
     GDTOT_CRYPT = os.environ.get("GDTOT_CRYPT")
     UNIFIED_EMAIL = os.environ.get("UNIFIED_EMAIL")
     UNIFIED_PASS = os.environ.get("UNIFIED_PASS")
